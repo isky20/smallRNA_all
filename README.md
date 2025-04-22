@@ -1,3 +1,15 @@
+
+Automated Small RNA-Seq Processing Using Bowtie1 and featureCounts
+```
+1- Checks if the Bowtie1 genome index exists.
+2- Loops through each .fastq file in the directory.
+3- Aligns reads using Bowtie1.
+4- Converts and sorts the output into a sorted BAM.
+5- Uses featureCounts to count reads mapped to genes using the GTF annotation.
+6- Cleans up temporary files and stores count matrices per sample.
+```
+
+
 This R script performs differential expression analysis 
 using the edgeR package:
 ```
