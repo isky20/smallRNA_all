@@ -22,3 +22,16 @@ Rscript run_edgeR_DEG.R \                          # Run the R script using Rscr
   --number.logFC 1 \                               # Log2 fold-change threshold for filtering DEGs
   --number.FDR 0.05                                # FDR (adjusted p-value) threshold for filtering DEGs
 ```
+Fetching miRNA targets using the multiMiR database:
+
+```
+1- Load required libraries – multiMiR and readxl.
+2- Read input CSV file – Load list of miRNA names from the specified file.
+3- Set working directory – Switch to the folder where output files will be saved.
+4- Loop through each miRNA – Use get_multimir() to fetch predicted/validated targets.
+5- Handle errors gracefully – Continue even if some miRNAs fail.
+6- Export results – Save each miRNA's target info into a separate CSV file.
+```
+```
+Rscript get_miRNA_targets_multiMiR.R mirna_list.csv results/
+```
