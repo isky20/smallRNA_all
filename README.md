@@ -47,3 +47,4 @@ Fetching miRNA targets using the multiMiR database (Human,Mouse,Rat):
 ```
 Rscript get_miRNA_targets_multiMiR.R mirna_list.csv results/
 ```
+PubMed Abstract Downloader by PMID from Excel File using Entrez API by extract_pubmed_data.py
