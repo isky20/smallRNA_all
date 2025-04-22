@@ -22,7 +22,7 @@ Rscript run_edgeR_DEG.R \                          # Run the R script using Rscr
   --number.logFC 1 \                               # Log2 fold-change threshold for filtering DEGs
   --number.FDR 0.05                                # FDR (adjusted p-value) threshold for filtering DEGs
 ```
-Fetching miRNA targets using the multiMiR database:
+Fetching miRNA targets using the multiMiR database (Human,Mouse,Rat):
 
 ```
 1- Load required libraries – multiMiR and readxl.
